@@ -1,0 +1,61 @@
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.padding-sm {
+  padding: 1rem;
+}
+
+.padding-md {
+  padding: 1.5rem;
+}
+
+.padding-lg {
+  padding: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.gap-xs {
+  gap: 0.5rem;
+}
+
+.gap-sm {
+  gap: 1rem;
+}
+
+.gap-md{
+  gap: 1.5rem;
+}
+
+.gap-lg {
+  gap: 2rem;
+}
+
+.grid{
+  display: grid;
+}
+
+
+@media (min-width: 768px) {
+ 
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
