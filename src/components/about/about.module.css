@@ -1,0 +1,96 @@
+.aboutinfo {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.team,
+.aboutinfo {
+  padding-block: 3rem;
+}
+
+.aboutinfo > div {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutinfo > div > p {
+  max-width: 40ch;
+  line-height: 1.3;
+  font-size: var(--text-md);
+}
+
+.aboutinfo > div:last-child {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.aboutinfo > div:last-child > img:last-child {
+  position: absolute;
+  top: -15px;
+  left: 56.5%;
+  width: 50%;
+  height: 50%;
+  z-index: -1;
+}
+
+.aboutinfo > div:last-child > img:first-child {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.teamcard {
+  box-shadow: 0 0.1rem 0.9rem 0 rgba(0, 0, 0, 0.164);
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.teamcard > div h2 {
+  font-size: var(--heading-5);
+  color: var(--tertiary-color);
+}
+
+.teamcard > div p {
+  font-size: var(--text-md);
+  color: var(--secondary-color);
+}
+
+.img {
+  max-width: 100%;
+  height: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutinfo {
+    overflow-x: unset;
+  }
+
+  .team,
+  .aboutinfo {
+    padding-block: 9rem;
+  }
+
+  .aboutinfo > div {
+    text-align: left;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .aboutinfo > div > p {
+    max-width: 49ch;
+  }
+
+  .aboutinfo > div:last-child > img:last-child {
+    top: -20px;
+    left: 62%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 948px) {
+ .team > div {
+  grid-template-columns: repeat(2, 1fr);
+ }
+}

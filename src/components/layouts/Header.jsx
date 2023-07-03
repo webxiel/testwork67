@@ -17,22 +17,22 @@ const handleMenu = () => {
     {
       id: 2,
       name: "About",
-      link: "/",
+      link: "/about",
     },
     {
       id: 3,
       name: "Services",
-      link: "/",
+      link: "/services",
     },
     {
       id: 4,
       name: "Products",
-      link: "/",
+      link: "/products",
     },
     {
       id: 5,
-      name: "Partners",
-      link: "/",
+      name: "Contact us",
+      link: "/contact",
     },
   ];
   return (
@@ -44,7 +44,7 @@ const handleMenu = () => {
         }`}>
           {HeaderLinks.map((links) => (
             <li key={links.id}>
-              <Link className={pathname === links.link ? styles.active : ''} src={links.link}>
+              <Link className={pathname === links.link ? styles.active : ''} to={links.link}>
                 {links.name}
               </Link>
             </li>

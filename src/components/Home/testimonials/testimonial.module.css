@@ -1,0 +1,106 @@
+.testimonial {
+ padding-block: 8rem;
+ background-image: url('../../../assets/images/shape3.svg');
+ background-position: top right;
+ background-size: auto;
+ background-repeat: no-repeat;
+ background-size: 100px, 80px;
+}
+
+.testimonial > h2 {
+  color: var(--primary-color);
+  font-weight: var(--bold);
+  font-size: var(--heading-5);
+}
+
+.testimonial > p {
+  color: var(--primary-color);
+  font-weight: var(--bold);
+  font-size: var(--heading-1);
+  max-width: 30ch;
+}
+
+.testimonial p {
+  text-align: center;
+}
+
+.testimonialCard {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: none;
+  cursor: pointer;
+}
+
+.card {
+  padding: 2rem 0;
+  margin: 0;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.25rem 2.5rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.card > p {
+  max-width: 45ch;
+  text-align: center;
+  padding-inline: 1.5rem;
+}
+
+.card > div > img {
+   width: 50px;
+   height: 50px;
+}
+
+
+.testimonialPagination {
+  margin-bottom: 1rem;
+}
+
+.testimonialPagination .dot {
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--primary-color-2);
+  background-color: var(--primary-color-2);
+  width: 12px;
+  height: 12px;
+}
+
+.testimonialPagination .dot .active{
+  width: 6px;
+  height: 6px;
+  background-color:var(--primary-color-1);
+  border-radius: 50%;
+}
+
+.card > div > span > p:first-child {
+  color: var(--primary-color);
+  font-weight: var(--bold);
+}
+
+.card > div > span > p:last-child,
+.card > p {
+  font-size: var(--text-md);
+  color: var(--secondary-color);
+}
+
+@media screen and (min-width: 768px){
+
+  .testimonial {
+   padding-block: 14rem;
+   background-size: auto;
+  }
+  
+  .testimonialCard {
+    padding: 2rem;
+  }
+
+  .card {
+    padding: 2rem;
+    margin: 0 2rem;
+  }
+  
+  .nav {
+    display: block;
+  }
+}

@@ -1,0 +1,209 @@
+.app2container,
+.app1container,
+.app3container {
+  padding: 1rem;
+}
+
+.appHeader {
+  background-image: url("../../../assets/images/shape4.png");
+  background-size: 100px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.appHeader > h1 {
+  color: var(--primary-color);
+  font-size: var(--heading);
+  text-align: center;
+  padding-block: 1.5rem;
+}
+
+.app1container,
+.app3container {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  text-align: center;
+}
+
+.app2container {
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.app1container > div:last-child,
+.app3container > div:last-child {
+  order: -1;
+}
+
+.app1container > div,
+.app2container > div:last-child,
+.app3container > div {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.phonePicture {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 60%;
+}
+
+.phonePic1 {
+  position: absolute;
+  top: 30%;
+  right: 70%;
+  width: 20%;
+  height: 20%;
+}
+
+.phonePic2 {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  width: 20%;
+  height: 20%;
+}
+
+.app1container > div:last-child > h2,
+.app2container > div:first-child > h2,
+.app3container > div:last-child > h2 {
+  font-size: var(--heading);
+}
+
+.app1container > div:last-child > p,
+.app2container > div:first-child > p,
+.app3container > div:last-child > p {
+  max-width: 47ch;
+  font-weight: var(--semi-thin);
+  font-size: var(--text-md);
+}
+
+@media screen and (min-width: 768px) {
+  .app2container,
+  .app1container,
+  .app3container {
+    padding: 3rem;
+  }
+
+  .app1container,
+  .app3container,
+  .app2container {
+    text-align: left;
+  }
+
+  .appHeader {
+    background-size: auto;
+  }
+
+  .app1container,
+  .app3container {
+    background-image: url("../../../assets/images/Shape2.svg");
+    background-position: top right;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
+  .appHeader > h1 {
+    padding-block: 11rem;
+  }
+
+  .app1container,
+  .app3container {
+    position: relative;
+    height: 100vh;
+  }
+
+  .app1container,
+  .app2container,
+  .app3container {
+    flex-direction: row;
+  }
+
+  .app1container > div:last-child,
+  .app3container > div:last-child {
+    order: initial;
+  }
+
+  .phonePicture {
+    width: unset;
+    height: unset;
+  }
+
+  .phonePic1 {
+    position: absolute;
+    top: 230px;
+    width: unset;
+    height: unset;
+  }
+
+  .phonePic2 {
+    position: absolute;
+    top: 395px;
+    width: unset;
+    height: unset;
+  }
+
+  .app1container > div:last-child > p,
+  .app2container > div:first-child > p,
+  .app3container > div:last-child > p {
+    max-width: 35ch;
+    line-height: 1.7;
+    font-size: var(--text-lg);
+  }
+
+  .app1container > div:last-child,
+  .app3container > div:last-child {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 978px) {
+  .app1container,
+  .app2container,
+  .app3container {
+    flex-direction: column;
+    height: unset;
+    text-align: center;
+  }
+
+  .app1container > div:last-child,
+  .app3container > div:last-child {
+    order: -1;
+  }
+
+  .app1container > div:last-child > p,
+  .app2container > div:first-child > p,
+  .app3container > div:last-child > p {
+    max-width: 40ch;
+    font-weight: var(--semi-thin);
+    font-size: var(--text-lg);
+  }
+
+  .app1container,
+  .app3container {
+    background-image: url("../../../assets/images/Shape2.svg");
+    background-position: top right;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
+  .phonePic1 {
+    position: absolute;
+    width: 35%;
+    height: 35%;
+    top: 30%;
+    right: 75%;
+  }
+
+  .phonePic2 {
+    position: absolute;
+    width: 35%;
+    height: 35%;
+    top: 50%;
+    left: 75%;
+  }
+}

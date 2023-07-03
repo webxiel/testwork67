@@ -1,0 +1,34 @@
+.serviceContainer{
+  background-image: url('../../../assets/images/dots.svg');
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+
+
+.serviceContainer > h2 {
+  font-size: var(--heading-1);
+  font-weight: var(--bold);
+}
+
+
+.serviceCards > div > h3 {
+  font-size: var(--heading-4);
+}
+
+.serviceCards > div > p {
+  max-width: 30ch;
+}
+
+.serviceCards > div {
+  text-align: center;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.1rem 0.5rem 0 rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 769px) and (max-width: 968px) {
+  .serviceCards {
+    grid-template-columns: 1fr;
+  }
+}

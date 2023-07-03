@@ -1,0 +1,61 @@
+.section1 img,
+.section2 img,
+.section3 img,
+.section4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.section2card,
+.section4card {
+  order: -1;
+}
+
+@media screen and (min-width: 768px) {
+  .section2,
+  .section4 {
+    padding: 0 2rem !important;
+  }
+  
+  .section2card,
+  .section4card {
+    align-items: flex-end;
+  }
+
+  .section2card button,
+  .section4card button {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .section2card,
+  .section4card {
+    order: initial;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 988px) {
+  .section1,
+  .section2,
+  .section3,
+  .section4 {
+    grid-template-columns: 1fr;
+    padding: 0 !important;
+  }
+
+  .section2card,
+  .section4card {
+    align-items: center;
+  }
+
+  .section2card button,
+  .section4card button {
+    margin: 0;
+  }
+
+  .section2card,
+  .section4card {
+    order: -1;
+  }
+}

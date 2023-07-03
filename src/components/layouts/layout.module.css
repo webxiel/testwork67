@@ -1,5 +1,5 @@
 .navContainer{
-  padding: 1rem 2rem;
+  padding: 1.5rem 6rem;
   z-index: 5;
 }
 
@@ -76,6 +76,7 @@ background-color: rgba(156, 154, 154, 0.322);
 @media (max-width: 768px) {
   .navContainer {
     background-color: var(--primary-color);
+    padding: 1rem;
   }
 
   .navContainer > nav > button {
@@ -86,7 +87,7 @@ background-color: rgba(156, 154, 154, 0.322);
     height: 40px;
     width: 40px;
     border: none;
-    z-index: 5;
+    z-index: 20;
     background-color: var(--primary-color-1);
   }
 
@@ -100,6 +101,7 @@ background-color: rgba(156, 154, 154, 0.322);
     width: 100%;
     color: black;
     padding-top: 7rem;
+    z-index: 5;
     font-size: 1.5rem;
     background-color: white;
     transform: translateX(100%);

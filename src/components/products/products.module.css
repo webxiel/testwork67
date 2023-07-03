@@ -1,0 +1,177 @@
+.main > div {
+  padding-block: 3rem;
+}
+
+.main > div > h2 {
+  color: var(--primary-color);
+}
+
+.app1container {
+  text-align: center;
+}
+
+.app1container > div:last-child,
+.app3container > div:last-child {
+  order: -1;
+}
+
+.app3container {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  text-align: center;
+}
+
+.app1container > div {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.phonePicture {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 60%;
+}
+
+.phonePic1 {
+  position: absolute;
+  top: 30%;
+  right: 70%;
+  width: 20%;
+  height: 20%;
+}
+
+.phonePic2 {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  width: 20%;
+  height: 20%;
+}
+
+.app1container > div:last-child h2 {
+  font-size: var(--heading);
+}
+
+.app1container > div:last-child p,
+.app3container > div:last-child > p {
+  max-width: 40ch;
+  font-weight: var(--semi-thin);
+  font-size: var(--text-md);
+}
+
+.app1container > div:last-child,
+.app3container > div:last-child {
+  padding: 1rem;
+}
+
+.productContainer2 > div > div {
+  max-width: 30ch;
+  text-align: center;
+}
+
+.slide img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 768px) {
+  .app1container,
+  .app3container {
+    flex-direction: row;
+    background-size: auto;
+    text-align: left;
+  }
+
+  .app1container > div:last-child,
+  .app3container > div:last-child {
+    order: initial;
+  }
+
+  .productcontainer {
+    background-image: url("../../assets/images/Shape2.svg");
+    background-position: top right;
+    background-size: 100px, 80px;
+    background-repeat: no-repeat;
+  }
+
+  .app3container {
+    background-image: url("../../assets/images/Shape2.svg");
+    background-position: top right;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
+  .phonePicture {
+    width: unset;
+    height: unset;
+  }
+
+  .phonePic1 {
+    position: absolute;
+    top: 230px;
+    width: unset;
+    height: unset;
+  }
+
+  .phonePic2 {
+    position: absolute;
+    top: 395px;
+    width: unset;
+    height: unset;
+  }
+
+  .app1container > div:last-child > p,
+  .app3container > div:last-child > p {
+    max-width: 35ch;
+    line-height: 1.7;
+    font-size: var(--text-lg);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 978px) {
+  .app1container,
+  .app3container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .app1container > div:last-child > p,
+  .app3container > div:last-child > p {
+    font-weight: var(--semi-thin);
+    font-size: var(--text-lg);
+    max-width: 55ch;
+  }
+
+  .productcontainer {
+    background-image: url("../../assets/images/Shape2.svg");
+    background-position: top right;
+    background-size: 100px, 80px;
+    background-repeat: no-repeat;
+  }
+
+  .app1container > div:last-child,
+  .app3container > div:last-child {
+    order: -1;
+    padding-block: 1rem;
+  }
+
+  .phonePic1 {
+    position: absolute;
+    width: 35%;
+    height: 35%;
+    top: 30%;
+    right: 75%;
+  }
+
+  .phonePic2 {
+    position: absolute;
+    width: 35%;
+    height: 35%;
+    top: 50%;
+    left: 75%;
+  }
+}

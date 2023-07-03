@@ -1,0 +1,341 @@
+.hero {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.hero > div:last-child {
+  position: absolute;
+  bottom: -35px;
+  left: 10%;
+}
+
+.hero > div:nth-child(5) {
+  position: absolute;
+  top: 63px;
+  right: 6%;
+}
+
+.hero > div:nth-child(6) {
+  position: absolute;
+  top: -60px;
+  left: 5%;
+}
+
+.hero > div:last-child > img {
+  width: 50px;
+  height: 50px;
+}
+
+.heroContainer {
+  padding-block: 2rem;
+}
+
+.hero > div:nth-child(2),
+.hero > div:nth-child(3),
+.hero > div:nth-child(4) {
+  display: none;
+}
+
+.heroContainer > div {
+  text-align: center;
+}
+
+.heroContainer > div > h1 {
+  font-size: var(--heading);
+  font-weight: var(--bold);
+}
+
+.heroContainer > div > p {
+  font-size: var(--text-lg);
+  font-weight: var(--regular);
+  max-width: 56ch;
+  margin-block: 1rem;
+}
+
+.aboutContainer > div:last-child p,
+.aboutContainer > div:last-child h3,
+.heroContainer > div > p {
+  margin-block: 1rem;
+}
+
+.heroBtn,
+.aboutBtn {
+  background-color: var(--primary-color-1);
+  color: var(--background-color);
+  margin: 0 auto;
+  display: block;
+}
+
+.heroContainer img {
+  object-fit: contain;
+  width: 90%;
+  height: 90%;
+}
+
+.aboutContainer > div > div {
+  box-shadow: 0 0.3rem 0.9rem 0 rgba(43, 89, 255, 0.089);
+  border-radius: 0.6rem;
+  padding: 0.9rem;
+}
+
+.aboutContainer > div:last-child {
+  order: -1;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.aboutContainer > div > div > span > h2 {
+  font-size: var(--heading-5);
+}
+
+.aboutContainer > div > div:first-child > span > p,
+.aboutContainer > div > div:nth-of-type(2) span > p,
+.aboutContainer > div > div:last-child > span > p,
+.aboutContainer > div:last-child > p {
+  color: var(--secondary-color);
+  line-height: 1.4;
+}
+
+.aboutContainer > div > div > span > p {
+  font-size: var(--text-md);
+}
+
+.aboutContainer > div:last-child h3 {
+  font-size: var(--heading-5);
+  color: var(--primary-color);
+  font-weight: var(--bold);
+  line-height: 1.6;
+}
+
+.aboutContainer > div:last-child h4 {
+  font-size: var(--heading-1);
+  font-weight: var(--semi-bold);
+  color: var(--tertiary-color);
+}
+
+.aboutContainer > div:last-child p {
+  font-size: var(--text-md);
+}
+
+.contactContainer > div {
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  padding: 2rem 2rem;
+  color: var(--background-color);
+  background-image: url("../../assets/images/Ellipse38.svg"),
+    url("../../assets/images/Ellipse39.svg"),
+    url("../../assets/images/Ellipse19.png"),
+    url("../../assets/images/Ellipse20.png");
+  background-position: top right, top right, top center, left center;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 100px, 80px;
+}
+
+.contactContainer > div > div > h2 {
+  font-size: var(--heading-5);
+  font-weight: var(--semi-bold);
+  max-width: 20ch;
+  line-height: 1.4;
+}
+
+.contactContainer > div > div > p {
+  font-size: var(--text-md);
+  font-weight: var(--regular);
+  line-height: 1.5;
+  max-width: 46ch;
+}
+
+.contactContainer > div > span {
+  margin-top: 0;
+}
+
+.contactContainer > div > span > img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.trustedby {
+  padding-block: 2rem;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 769px) {
+  .hero {
+    margin-bottom: 5rem;
+  }
+
+  .hero > div:nth-child(2) {
+    position: absolute;
+    bottom: 450px;
+    left: 5%;
+    display: block;
+  }
+
+  .hero > div:nth-child(3) {
+    position: absolute;
+    right: 47%;
+    bottom: -90px;
+    display: block;
+  }
+
+  .hero > div:nth-child(4) {
+    position: absolute;
+    bottom: 500px;
+    right: 4%;
+    display: block;
+  }
+
+  .hero > div:last-child {
+    position: absolute;
+    bottom: -120px;
+    left: 10%;
+  }
+
+  .hero > div:last-child > img {
+    width: unset;
+    height: unset;
+  }
+
+  .heroContainer {
+    flex-direction: row;
+  }
+
+  .hero::before {
+    background-color: var(--primary-color);
+    content: "";
+    display: block;
+    transform: skew(0deg, 4.5deg);
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    top: 89%;
+    left: 0px;
+    z-index: -1;
+  }
+
+  .heroContainer > div {
+    text-align: left;
+  }
+
+  .heroContainer > div > h1 {
+    max-width: 45ch;
+  }
+
+  .heroContainer img {
+    width: unset;
+  }
+
+  .heroBtn,
+  .aboutBtn {
+    margin: 0;
+    display: flex;
+  }
+
+  .hero > img:last-child {
+    position: absolute;
+    top: 32rem;
+    bottom: 0;
+  }
+
+  .redfill {
+    display: none;
+  }
+
+  .yellowfill {
+    display: none;
+  }
+
+  .aboutContainer > div > div:nth-child(2) {
+    transform: translateX(-10%);
+  }
+
+  .aboutContainer > div:first-child {
+    padding-inline: 7rem;
+  }
+
+  .aboutContainer > div:last-child {
+    order: initial;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .aboutContainer > div > div {
+    max-width: 40ch;
+  }
+
+  .aboutContainer > div:last-child h4 {
+    font-size: var(--heading-1);
+    max-width: 27ch;
+    font-weight: var(--semi-bold);
+  }
+
+  .aboutContainer > div:last-child p {
+    font-size: var(--text-md);
+    max-width: 48ch;
+  }
+
+  .contactContainer > div {
+    padding: 6rem 6rem;
+    background-size: auto;
+  }
+
+  .contactContainer > div > span {
+    margin-top: 5.5rem;
+  }
+
+  .contactContainer > div > div > h2 {
+    font-size: var(--heading-1);
+  }
+
+  .contactContainer > div > div > p {
+    max-width: 40ch;
+  }
+
+  .contactContainer > div > span > img {
+    width: unset;
+    height: unset;
+  }
+
+  .trustedby {
+    padding-block: 9rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 968px) {
+  .heroContainer {
+    flex-direction: column;
+  }
+
+  .hero > div:nth-child(2),
+  .hero > div:nth-child(3),
+  .hero > div:nth-child(4) {
+    display: none;
+  }
+
+  .aboutContainer > div:first-child {
+    padding-inline: 1rem;
+  }
+
+  .contactContainer > div {
+    grid-template-columns: 1fr;
+    padding: 3rem;
+  }
+
+  .contactContainer > div > span > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contactContainer > div > div > p {
+    max-width: 48ch;
+  }
+
+}

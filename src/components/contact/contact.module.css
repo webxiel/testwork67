@@ -1,0 +1,99 @@
+
+.contactcard {
+ display: grid;
+ grid-template-columns: 90%;
+ place-content: center;
+ gap: 2rem;
+}
+
+
+.subcontact {
+  box-shadow: 0 0.2rem 0.1rem 0 rgba(0, 0, 0, 0.1);
+  max-height: 250px;
+}
+
+.subcontact > h2 {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  font-size: var(--heading-4);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.subcontact > div,
+.subcontact > h2 {
+  padding: 1.5rem 1.7rem;
+}
+
+.subcontact > div h3 {
+  color: var(--secondary-color-1);
+  font-size: var(--heading-5);
+}
+
+.subcontact > div p {
+  color: var(--secondary-color);
+  font-size: var(--text-md);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.form {
+  box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.form > input,
+.form > textarea {
+  background-color: var(--secondary-color-x);
+  border-radius: 0.15rem;
+  color: var(--secondary-color);
+  border: none;
+}
+
+.form > input {
+  padding: 1.3rem 3rem;
+}
+
+.form > input,
+.form > textarea {
+  margin-block: 0.4rem;
+}
+
+.form > textarea {
+  padding: 3rem 3rem !important;
+}
+
+.form > button {
+  padding: 1.4rem 4rem !important;
+  margin-left: 0;
+  margin-right: auto;
+  background-color: var(--primary-color-1);
+}
+
+.form > p {
+  padding-block: 0.1rem;
+  padding: 0;
+  margin: 0;
+  color: rgba(255, 0, 0, 0.486);
+}
+
+
+@media screen and (min-width: 768px){
+  .contactcard {
+    grid-template-columns: 38% auto;
+    gap: 4rem;
+    place-content: unset;
+    margin: auto;
+    padding: 2rem 4rem;
+   }
+}
+
+
+@media (min-width: 769px) and (max-width: 968px){
+   .contactcard {
+    display: grid;
+    grid-template-columns: 90%;
+    place-content: center;
+    gap: 2rem;
+   }
+}
