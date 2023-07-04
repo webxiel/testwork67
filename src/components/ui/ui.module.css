@@ -8,7 +8,7 @@
 }
 
 .sectioncard {
-  padding: 0;
+  padding: 1rem;
 }
 
 .hero {
@@ -74,7 +74,7 @@
 
 @media (min-width: 768px) {
   .container {
-    padding: 2rem 6rem;
+    padding: 2rem 5rem;
   }
 
   .sectioncard {
@@ -101,5 +101,15 @@
     margin-left: 0;
     margin-right: auto;
     display: block;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1180px){
+  .container {
+    padding: 2rem;
+  }
+
+  .sectioncard {
+    padding: 2rem 4rem;
   }
 }

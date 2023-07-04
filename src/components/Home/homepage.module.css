@@ -162,8 +162,8 @@
 }
 
 .slide img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   object-fit: contain;
 }
 
@@ -254,11 +254,11 @@
   }
 
   .aboutContainer > div > div:nth-child(2) {
-    transform: translateX(-10%);
+    transform: translateX(-7%);
   }
 
   .aboutContainer > div:first-child {
-    padding-inline: 7rem;
+    padding-inline: 2rem;
   }
 
   .aboutContainer > div:last-child {
@@ -321,7 +321,7 @@
   }
 
   .aboutContainer > div:first-child {
-    padding-inline: 1rem;
+    padding-inline: 0.4rem;
   }
 
   .contactContainer > div {

@@ -1,5 +1,5 @@
 import styles from "./appsection.module.css";
-import PhonePicture from "../../../assets/images/PhonePicture.svg";
+import PhonePicture from "../../../assets/images/Mock up (1).svg";
 import pinkimage from "../../../assets/images/pinkgrame.svg";
 import yellowimage from "../../../assets/images/yellowFrame.svg";
 
@@ -20,6 +20,7 @@ function AppSection2() {
       />
       <img className={styles.phonePic1} src={yellowimage} alt="pink" />
       <img className={styles.phonePic2} src={pinkimage} alt="yellow" />
+    
     </div>
     </div>
   );
