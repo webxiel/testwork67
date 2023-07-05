@@ -1,14 +1,20 @@
+import { useEffect } from 'react';
+
+import { useInView } from 'react-intersection-observer';
+
+
 import Container from "../ui/Container";
 import performance from "../../assets/images/performance.svg";
 import secureTime from "../../assets/images/secure.svg";
 import time from "../../assets/images/time.svg";
 import Button from "../ui/Button";
-import styles from './homepage.module.css'
+import styles from './homepage.module.css';
 
 function About() {
+
   return (
     <Container className={`grid grid-2 gap-xs ${styles.aboutContainer}`}>
-      <div className='flex flex-col gap-lg'>
+      <div  className='flex flex-col gap-lg'>
         <div className='flex gap-sm'>
           <img src={performance} alt="performance" />
           <span>
