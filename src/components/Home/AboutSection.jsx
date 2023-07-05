@@ -1,6 +1,3 @@
-import { motion, useAnimation } from 'framer-motion';
-import { useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
 
 import Container from "../ui/Container";
 import performance from "../../assets/images/performance.svg";
@@ -10,24 +7,11 @@ import Button from "../ui/Button";
 import styles from './homepage.module.css';
 
 function About() {
-  const animation = useAnimation();
-  const {ref, inView} = useInView();
-
-  useEffect(()=> {
-        if(inView){
-           animation.start({
-            x:0, 
-           transition: {duration: 1, 
-            type: 'ease-in',
-            delay: 0.9},
-            opacity: 1,
-           })
-        }
-  }, [])
+  
   return (
     <Container className={`grid grid-2 gap-xs ${styles.aboutContainer}`}>
-      <div ref={ref} className='flex flex-col gap-lg'>
-        <motion.div animate={animation} className='flex gap-sm'>
+      <div  className='flex flex-col gap-lg'>
+        <div className='flex gap-sm'>
           <img src={performance} alt="performance" />
           <span>
             <h2>Best Performance</h2>
@@ -36,7 +20,7 @@ function About() {
               applications
             </p>
           </span>
-        </motion.div>
+        </div>
         <div className='flex gap-sm'>
           <img src={time} alt="time" />
           <span>
