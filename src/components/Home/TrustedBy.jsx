@@ -1,15 +1,12 @@
-
-import {Swiper, SwiperSlide} from 'swiper/react';
-import 'swiper/css';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-import styles from './homepage.module.css';
-import Container from '../ui/Container';
+import styles from "./homepage.module.css";
+import Container from "../ui/Container";
 import trustedby from "../utils/trustedby";
-
-
 
 function TrustedBy() {
   return (
@@ -61,14 +58,14 @@ function TrustedBy() {
           },
         }}
         loop={true}
-        centeredSlides
-      autoplay={{
-        delay: 1000,
-        disableOnInteraction: true
-    }}
-   
-    modules={[Autoplay, Pagination, Navigation]}
-      className='mySwiper'>
+        centeredSlides 
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: true,
+        }}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
         {trustedby.map((trustee) => (
           <SwiperSlide className={styles.slide} key={trustee.id}>
             <img src={trustee.image} alt={trustee.name} />

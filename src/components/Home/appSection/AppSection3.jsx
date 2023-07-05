@@ -1,13 +1,15 @@
 import styles from "./appsection.module.css";
-import PhonePicture from "../../../assets/images/PhonePicture.svg";
+import PhonePicture from "../../../assets/images/Mock up (1).svg";
 import pinkimage from "../../../assets/images/pinkgrame.svg";
 import yellowimage from "../../../assets/images/yellowFrame.svg";
+// import PhonePicture from "../../../assets/images/phonePicture2.svg";
+
 
 function AppSection3() {
   return (
-    <div className={`flex flex-col full-width gap-xlg center ${styles.app3container}`}>
+    <div className={`flex flex-col full-width gap-md center ${styles.app3container}`}>
      <div>
-      <img
+     <img
         className={styles.phonePicture}
         src={PhonePicture}
         alt="picture_of_work"

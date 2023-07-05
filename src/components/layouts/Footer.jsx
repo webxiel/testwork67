@@ -3,6 +3,8 @@ import { FaEnvelope, FaPhone } from 'react-icons/fa';
 import footerLinks from '../utils/footer'
 import styles from './layout.module.css';
 
+
+
 function Footer() {
   return (
     <section className={`flex flex-col gap-md  ${styles.footer}`}>

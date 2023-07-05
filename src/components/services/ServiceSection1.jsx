@@ -7,7 +7,7 @@ import image from '../../assets/images/laptop.svg'
 
 function ServiceSection1() {
   return (
-    <Container>
+    <Container className={styles.servicecontainer}>
        <SectionHeader
      heading='Services we deliver'
      />
