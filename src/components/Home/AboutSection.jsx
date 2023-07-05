@@ -2,12 +2,6 @@ import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-
-import { useEffect } from 'react';
-
-import { useInView } from 'react-intersection-observer';
-
-
 import Container from "../ui/Container";
 import performance from "../../assets/images/performance.svg";
 import secureTime from "../../assets/images/secure.svg";
