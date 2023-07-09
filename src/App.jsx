@@ -2,10 +2,10 @@ import {} from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home/Home";
-import About from "./about";
-import Services from "./services";
-import Products from "./products";
-import Contact from "./contact";
+import About from "./components/about/AboutPage";
+import Services from "./components/services/ServicesPage";
+import Products from "./components/products/ProductsPage";
+import Contact from "./components/contact/ContactPage";
 
 function App() {
   const routes = [
