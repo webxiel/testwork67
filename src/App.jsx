@@ -9,11 +9,11 @@ import Contact from "./contact";
 
 function App() {
   const routes = [
-    { path: "/", element: <Home /> },
-    { path: "/about", element: <About /> },
-    { path: "/services", element: <Services /> },
-    { path: "/products", element: <Products /> },
-    { path: "/contact", element: <Contact /> },
+    { id: 1, path: "/", element: <Home /> },
+    { id: 2, path: "/about", element: <About /> },
+    { id: 3, path: "/services", element: <Services /> },
+    { id: 4, path: "/products", element: <Products /> },
+    { id: 5, path: "/contact", element: <Contact /> },
   ];
 
   return (

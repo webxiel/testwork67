@@ -33,6 +33,7 @@ function ContactForm() {
         console.log(props);
         return (
           <Form className={`flex flex-col gap-xs ${styles.form}`}>
+            <h2>Get in <span>touch</span></h2>
             <Field name="name" placeholder="Enter your name" />
             <ErrorMessage name="name" component="p" />
             <Field name="email" placeholder="Enter your email" />

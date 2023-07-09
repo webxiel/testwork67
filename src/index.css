@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Playfair+Display:ital,wght@0,400;1,500&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
 * {
   margin: 0;
@@ -7,7 +7,6 @@
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color-scheme: light dark;
   background-color: #fff;
 
@@ -17,42 +16,38 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
+  /* heading */
+  --heading: clamp(1.7rem, 4.5vw, 3.2rem);
+  --heading-1: clamp(1.4rem, 4.5vw, 2rem);
+  --heading-2: clamp(1.5rem, 4.5vw, 1.9rem);
+  --heading-3: clamp(1.3rem, 4.5vw, 1.5rem);
+  --heading-4: clamp(1rem, 4.5vw, 1.2rem);
+  --heading-5: clamp(0.9rem, 4.5vw, 1rem);
 
-/* heading */
---heading: clamp(1.7rem, 4.5vw, 3.2rem);
---heading-1: clamp(1.4rem, 4.5vw, 2rem) ;
---heading-2: clamp(1.5rem, 4.5vw, 1.9rem);
---heading-3: clamp(1.3rem, 4.5vw, 1.5rem);
---heading-4: clamp(1rem, 4.5vw, 1.2rem);
---heading-5: clamp(0.9rem, 4.5vw, 1rem);
+  /* text */
+  --text-sm: clamp(0.3rem, 4.5vw, 0.6rem);
+  --text-md: clamp(0.6rem, 4.5vw, 0.9rem);
+  --text-lg: clamp(0.9rem, 4.5vw, 1.2rem);
 
-/* text */
---text-sm: clamp(0.3rem, 4.5vw, 0.6rem);
---text-md:  clamp(0.6rem, 4.5vw, 0.9rem);
---text-lg:  clamp(0.9rem, 4.5vw, 1.2rem);
+  /* colors */
+  --background-color: #fff;
+  --primary-color: #001c80;
+  --primary-color-1: rgb(253, 76, 92);
+  --primary-color-2: #fd4c5b9c;
+  --secondary-color: #4c4c5fc2;
+  --secondary-color-x: #4c4c5f1a;
+  --secondary-color-1: rgb(255, 200, 62);
+  --secondary-color-2: #2b59ff;
+  --tertiary-color: #000b33;
 
-/* colors */
---background-color: #fff;
---primary-color: #001C80;
---primary-color-1: #FD4C5C;
---primary-color-2: #fd4c5b9c;
---secondary-color: #4c4c5fc2;
---secondary-color-x: #4c4c5f1a;
---secondary-color-1: #FFC83E;
---secondary-color-2: #2B59FF;
---tertiary-color: #000B33;
-
-
-/* font-weight */
---thin: 100;
---semi-thin: 200;
---med-thin: 300;
---regular: 400;
---semi-bold: 500;
---bold: 600;
-
+  /* font-weight */
+  --thin: 100;
+  --semi-thin: 200;
+  --med-thin: 300;
+  --regular: 400;
+  --semi-bold: 500;
+  --bold: 600;
 }
-
 
 a {
   text-decoration: none;
@@ -64,14 +59,19 @@ li {
 }
 
 body {
-margin: 0;
-color: black;
-font-weight: 400;
-font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: black;
+  font-weight: 400;
+  font-family: "Playfair Display", sans-serif;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-size: 3.2em;
+  font-family: "Bacasime Antique", sans-serif;
 }
 
 button {
@@ -82,4 +82,13 @@ button {
   font-weight: 500;
   cursor: pointer;
   transition: border-color 0.25s;
+  font-family: "Poppins", sans-serif;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.blur {
+ filter: blur(2px);
 }

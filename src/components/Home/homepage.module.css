@@ -64,6 +64,9 @@
 .aboutBtn {
   background-color: var(--primary-color-1);
   color: var(--background-color);
+  background: linear-gradient(to right, 
+  rgba(253, 76, 91, 0.651) 0%,
+  rgb(253, 76, 91) 100%);
   margin: 0 auto;
   display: block;
 }

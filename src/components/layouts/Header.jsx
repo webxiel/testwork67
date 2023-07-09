@@ -1,16 +1,13 @@
-import {useState} from "react";
-import { HashLink as Link } from "react-router-hash-link";
-import { useLocation } from 'react-router-dom';
-
-import styles from './layout.module.css';
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import styles from "./layout.module.css";
 
 function Header() {
   const [openMenu, setOpenMenu] = useState(false);
-  const pathname = useLocation.pathname;
 
-const handleMenu = () => {
-  setOpenMenu(!openMenu)
-}
+  const handleMenu = () => {
+    setOpenMenu(!openMenu);
+  };
 
   const HeaderLinks = [
     { id: 1, name: "Home", link: "/" },
@@ -36,24 +33,32 @@ const handleMenu = () => {
     },
   ];
   return (
-    <section className={`full-width ${styles.navContainer}`}>
-      <nav className='flex'>
+    <section
+      className={`full-width ${styles.navContainer} `}
+    >
+      <nav className="flex">
         <h1>Logo</h1>
-        <ul className={`flex gap-sm ${styles.navList} ${
-          openMenu ? styles.mobile : ''
-        }`}>
+        <ul
+          className={`flex gap-sm ${styles.navList} ${
+            openMenu ? styles.mobile : styles.closemobile
+          }`}
+        >
           {HeaderLinks.map((links) => (
             <li key={links.id}>
-              <Link className={pathname === links.link ? styles.active : ''} to={links.link}>
+              <Link to={links.link}>
                 {links.name}
               </Link>
             </li>
           ))}
         </ul>
 
-        <button type="button" onClick={handleMenu} className='flex gap flex-col center'>
+        <button
+          type="button"
+          onClick={handleMenu}
+          className="flex gap flex-col center"
+        >
           <span className={styles.line} />
-          <span className={styles.line}/>
+          <span className={styles.line} />
           <span className={styles.line} />
         </button>
       </nav>

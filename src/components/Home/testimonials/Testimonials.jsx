@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import testimonials from '../../utils/testimonials'
 import arrowLeft from '../../../assets/images/arrowleft.svg';
 import arrowRight from '../../../assets/images/arrowright.svg';
@@ -10,7 +10,7 @@ function Testimonials() {
   const { length } = testimonials
 
   const prevSlide = () => {
-    if (activeIndex === 1) {
+    if (activeIndex <= 1) {
       setActiveIndex(length - 1);
     } else {
       setActiveIndex(activeIndex - 1);
@@ -35,6 +35,21 @@ function Testimonials() {
 
   }
 
+
+  useEffect(()=> {
+    const handleSlide = setInterval(()=> {
+       if(activeIndex > (length-1)){
+         setActiveIndex(1)
+       }
+       if(activeIndex <= 0){
+        setActiveIndex(length-1);
+       }
+
+       setActiveIndex((prev)=> prev + 1);
+    }, 6000)
+    return ()=> clearInterval(handleSlide);
+  }, [activeIndex]);
+
   return (
     <Container className={`flex center flex-col gap-sm ${styles.testimonial}`}>
       <h2>Testimonial</h2>
@@ -46,7 +61,7 @@ function Testimonials() {
       {testimonials.map((test)=> (
         test.id === activeIndex ? 
           <div key={test.id} className={`flex flex-col gap-sm ${styles.card}`}>
-          <p>{test.text}</p>
+     <p className={activeIndex ? styles.cardText : ''}>{test.text}</p>
           <div className='flex center gap-sm'>
           <img className="circle" src={test.image} alt={test.name}/>
           <span className='flex flex-col'>

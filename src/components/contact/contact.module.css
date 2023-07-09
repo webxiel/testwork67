@@ -1,27 +1,33 @@
+.contactsection  {
+ background-color: #4c4c5f1a;
+}
+
 
 .contactcard {
  display: grid;
  grid-template-columns: 90%;
  place-content: center;
- gap: 2rem;
+ gap: 4rem;
 }
 
 .subcontact {
   box-shadow: 0 0.2rem 0.1rem 0 rgba(0, 0, 0, 0.1);
   max-height: 250px;
+  background-color: rgba(255, 255, 255, 0.726);
+  border-radius: 0.5rem;
+  filter: opacity(0.8);
 }
 
 .subcontact > h2 {
-  background-color: var(--primary-color);
-  color: var(--background-color);
+  color: var(--primary-color);
+  font-family: 'Bacasime Antique', sans-serif;
   font-size: var(--heading-4);
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  font-weight: 800;
 }
 
 .subcontact > div,
 .subcontact > h2 {
-  padding: 1.5rem 1.7rem;
+  padding: 1rem 1.1rem;
 }
 
 .subcontact > div h3 {
@@ -37,26 +43,37 @@
 }
 
 .form {
-  box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.1);
   padding: 1rem;
 }
 
+.form h2{
+  font-size: var(--heading-1);
+  margin-top: -1.8rem;
+}
+
+.form h2 > span {
+  color: var(--primary-color-1);
+  color: var(--secondary-color-1);
+  font-weight: 800;
+}
+
 .form > input,
 .form > textarea {
-  background-color: var(--secondary-color-x);
-  border-radius: 0.15rem;
-  color: var(--secondary-color);
+  background-color: transparent;
   border: none;
+  border-bottom: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  font-family: 'Playfair Display', sans-serif;
 }
 
 .form > input {
-  padding: 1.3rem 3rem;
+  padding: 1rem 3rem;
 }
 
 .form > input,
 .form > textarea {
-  margin-block: 0.4rem;
   font-size: var(--text-md);
+  margin-block: 0.6rem;
 }
 
 .form > textarea {
@@ -64,10 +81,22 @@
 }
 
 .form > button {
-  padding: 1.4rem 4rem !important;
+  padding: 1.1rem 4rem !important;
   margin-left: 0;
   margin-right: auto;
-  background-color: var(--primary-color-1);
+  font-family: 'Playfair Display', sans-serif !important;
+  background-color: var(--secondary-color-1);
+  background: linear-gradient(to right, 
+  rgba(255, 200, 62, 0.74) 0%,
+  rgb(255, 200, 62) 100%);
+  scale: 1;
+  transition: scale 3s ease-in-out;
+  transition-delay: 3s;
+}
+
+.form > button:hover {
+  transform: scale(0.7);
+  transition-delay: 0;
 }
 
 .form > p {
@@ -81,7 +110,7 @@
 @media screen and (min-width: 768px){
   .contactcard {
     grid-template-columns: 38% auto;
-    gap: 4rem;
+    gap: 2rem;
     place-content: unset;
     margin: auto;
     padding: 2rem 4rem;

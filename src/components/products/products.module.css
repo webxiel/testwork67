@@ -15,6 +15,11 @@
   order: -1;
 }
 
+.app3container > div:last-child h2 {
+  font-size: var(--heading);
+  margin-bottom: 1rem;
+}
+
 .app3container {
   background-color: var(--primary-color);
   color: var(--background-color);
@@ -67,9 +72,23 @@
   padding: 1rem;
 }
 
+.container {
+  place-items: center;
+  gap: 4rem;
+}
+
 .productContainer2 > div > div {
   max-width: 30ch;
   text-align: center;
+}
+
+.container > div h3 {
+  font-size: var(--heading-3);
+  font-weight: var(--bold);
+}
+
+.container > div p {
+  font-size: var(--text-md);
 }
 
 .slide img {

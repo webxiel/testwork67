@@ -6,11 +6,12 @@ import time from "../../assets/images/time.svg";
 import Button from "../ui/Button";
 import styles from './homepage.module.css';
 
-function About() {
-  
+
+function AboutSection() {
+
   return (
     <Container className={`grid grid-2 gap-xs ${styles.aboutContainer}`}>
-      <div  className='flex flex-col gap-lg'>
+      <div className='flex flex-col gap-lg'>
         <div className='flex gap-sm'>
           <img src={performance} alt="performance" />
           <span>
@@ -55,4 +56,4 @@ function About() {
   );
 }
 
-export default About;
+export default AboutSection;
