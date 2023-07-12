@@ -89,13 +89,15 @@
   background: linear-gradient(to right, 
   rgba(255, 200, 62, 0.74) 0%,
   rgb(255, 200, 62) 100%);
-  scale: 1;
-  transition: scale 3s ease-in-out;
-  transition-delay: 3s;
+  scale: 0.7;
+  transition: scale 10s ease-in;
+  transition-delay: 10s;
 }
 
 .form > button:hover {
-  transform: scale(0.7);
+  background: linear-gradient(to bottom, 
+  rgba(253, 76, 91, 0.534) 0%,
+  rgb(253, 76, 91) 100%);
   transition-delay: 0;
 }
 
